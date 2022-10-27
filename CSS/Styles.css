@@ -120,6 +120,7 @@ input[type=range] {
 .enabled::-webkit-slider-thumb, .enabled::-moz-range-thumb, .enabled::-ms-thumb {
   -webkit-appearance: none;
   /* display: none; */
+  visibility: visible;
   border: .1rem solid #000000;
   height: 2rem; 
   width: 1rem;
