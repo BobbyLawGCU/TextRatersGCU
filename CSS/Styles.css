@@ -117,7 +117,7 @@ input[type=range] {
 
 }
 
-.enabled::-webkit-slider-thumb {
+.enabled::-webkit-slider-thumb, .enabled::-moz-range-thumb, .enabled::-ms-thumb {
   -webkit-appearance: none;
   /* display: none; */
   border: .1rem solid #000000;
