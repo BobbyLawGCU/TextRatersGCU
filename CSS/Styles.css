@@ -56,10 +56,10 @@ input[type=range] {
     grid-column: controls;
     grid-row: auto;
   }
-
+/* 
   input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
-    /*display: none;*/
+    display: none;
     visibility: hidden;
     border: .1rem solid #000000;
     height: 2rem; 
@@ -93,7 +93,7 @@ input[type=range] {
     opacity:var(--OpValue, 0);
     cursor: pointer; 
   }
-  
+   */
 
   .showHide{
     display: none;
@@ -103,7 +103,7 @@ input[type=range] {
   margin-bottom: 4rem;
   } 
 
-.disabled::-webkit-slider-thumb {
+.disabled::-webkit-slider-thumb, .disabled::-moz-range-thumb, .disabled::-ms-thumb {
   -webkit-appearance: none;
   /* display: none; */
   visibility: hidden;
