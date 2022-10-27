@@ -130,6 +130,30 @@ input[type=range] {
   cursor: pointer; /* Cursor on hover */
 }
 
+/* For FireFox */
+.disabled::-moz-range-thumb {
+  visibility: hidden;
+  border: .1rem solid #000000;
+  height: 2rem; 
+  width: 1rem;
+  border-radius: 2rem;
+  background: #fdebf7;
+  opacity:0;
+  cursor: pointer; /* Cursor on hover */
+
+}
+
+.enabled::-moz-range-thumb {
+  visibility: visible;
+  border: .1rem solid #000000;
+  height: 2rem; 
+  width: 1rem;
+  border-radius: 2rem;
+  background: #fdebf7;
+  opacity:100;
+  cursor: pointer; /* Cursor on hover */
+}
+
 /* FEEDBACK */
 
 .valid {
