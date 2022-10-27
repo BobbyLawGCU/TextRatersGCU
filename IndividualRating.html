@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Consensual Assessment of Writing</title>
+    <link rel="stylesheet" href="CSS/Styles.css">
+    <script src="Script/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-serialize-object/2.5.0/jquery.serialize-object.min.js"></script>   
+  </head>
+  <body>
+	<header>
+        <h1>Consensual Assessment of Writing</h1>
+    </header>
+    <nav>
+        <!-- main navigation in here -->
+    </nav>
+    <main>
+        <section>
+            <form action="https://script.google.com/macros/s/AKfycbzw1ZjyLI5sbKKc9y1PwM9CqbgF5NtHMtT7exGgTqkMH5DfI9iqvjOqK66p_jAGqJG8/exec" method="post" id="submitScores" name="submitScoresIndividual" >
+                <!-- onsubmit="return getScore()" -->
+            <div class="userInput">
+                <p><label>Text: </label>
+                <input type="text" id = "Text" name="Text" placeholder="Enter name of text" required></p>
+                <p><label>Rater Initials: </label>
+                <input type="text" id = "RaterInitials" name="RaterInitials" placeholder="Your identifier" required></p>
+            </div>
+                <p>For the first 3 questions, please think about what helps you understand what the text is about.</p>
+                <fieldset>
+                    <!--<legend>Writers Awareness of Readers' Needs</legend>-->
+                    <p>To what degree does the chosen content help you understand what the text says?</p>
+                    <p class="spacing">
+                        <label for="scoreQ1">not at all</label>
+                        <input type="range" id="scoreQ1" name="scoreQ1" class="disabled" min="0" max="100" value="50" onclick="showSliderThumb('scoreQ1')" >
+                        <label for="scoreQ1">completely and fully</label>
+                        <span id="feedback_individual_Rating1" class="invalid"></span>
+                    </p>
+                    <p>To what degree does the chosen structure help you understand what the text says?</p>
+                    <p class="spacing">
+                        <label for="scoreQ2">not at all</label>
+                        <input type="range" id="scoreQ2" name="scoreQ2" class="disabled" onclick="showSliderThumb('scoreQ2')" min="0" max="100" value="50" >
+                        <label for="scoreQ2">completely and fully</label>
+                        <span id="feedback_individual_Rating2" class="invalid"></span>
+                    </p>
+                    <p>To what degree does the chosen language help you understand what the text says?</p>
+                    <p class="spacing">
+                        <label for="scoreQ3">not at all</label>
+                        <input type="range" id="scoreQ3" name="scoreQ3" class="disabled" onclick="showSliderThumb('scoreQ3')" min="0" max="100" value="50" >
+                        <label for="scoreQ3">completely and fully</label>
+                        <span id="feedback_individual_Rating3" class="invalid"></span>
+                    </p>
+                </fieldset>
+                <p>For the next 3 questions, please think about the impression you have of the writer: is this someone who knows how to write in this context?</p>
+                <fieldset>
+                    <!--<legend>Writers Context Awarness:</legend>-->
+                    <p>To what degree is the content appropriate for the situation and purposes outlined in the brief?</p>
+                    <p class="spacing">
+                        <label for="scoreQ4">not at all</label>
+                        <input type="range" id="scoreQ4" name="scoreQ4" class="disabled" onclick="showSliderThumb('scoreQ4')" min="0" max="100" value="50" >
+                        <label for="scoreQ4">completely and fully</label>
+                        <span id="feedback_individual_Rating4" class="invalid"></span>
+                    </p>
+                    <p>To what degree is the structure appropriate for the situation and purposes outlined in the brief?</p>
+                    <p class="spacing">
+                        <label for="scoreQ5">not at all</label>
+                        <input type="range" id="scoreQ5" name="scoreQ5" class="disabled" onclick="showSliderThumb('scoreQ5')" min="0" max="100" value="50" >
+                        <label for="scoreQ5">completely and fully</label>
+                        <span id="feedback_individual_Rating5" class="invalid"></span>
+                    </p>
+                    <p>To what degree is the language appropriate for the situation and purposes outlined in the brief?</p>
+                    <p class="spacing">
+                        <label for="scoreQ6">not at all</label>
+                        <input type="range" id="scoreQ6" name="scoreQ6" class="disabled" onclick="showSliderThumb('scoreQ6')" min="0" max="100" value="50" >
+                        <label for="scoreQ6">completely and fully</label>
+                        <span id="feedback_individual_Rating6" class="invalid"></span>
+                    </p>
+                </fieldset>
+                <p>
+                    <input type="submit" value="Submit">
+                </p> 
+            </form>
+            
+        </section>
+    </main>
+  </body>
+</html>

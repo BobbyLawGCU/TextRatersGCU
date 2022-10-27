@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+   }
+   body {
+    display: flex;
+    flex-direction: column;
+   } 
+   .display {
+    display: none !important;
+   }
+
+   .thankyou {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Styling the content box using height and width properties */
+    background-color: #fdebf7;
+    height: 9em;
+    width: 30em;
+    padding: 5em 2em 8em;
+    border-color: #2e0249;
+    border-style: solid;
+    border-width: 1em 1em 1em;
+    border-radius: 10%;
+    margin: 3em auto;
+   }   
+
+   .ty-style {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    color: #2e0249;
+   }
+
+   .ty-msg {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: #2e0249;
+    margin-top: 1em;
+   }

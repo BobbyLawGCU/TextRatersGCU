@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Consensual Assessment of Writing</title>
+    <link rel="stylesheet" href="CSS/Styles.css">
+    <script src="Script/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-serialize-object/2.5.0/jquery.serialize-object.min.js"></script>   
+  </head>
+  <body>
+	<header>
+        <h1>Consensual Assessment of Writing</h1>
+    </header>
+    <nav>
+        <!-- main navigation in here -->
+    </nav>
+    <main>
+        <section>
+            <form action="https://script.google.com/macros/s/AKfycbx_Ei1r9RBdKg0GS_B25An66Udw4nl2bDhtAPlVbMgL5_I89JiSGWkrrf_nakU9xFJnqg/exec" method="post" id="submitScores" name="submitScoresOverall" >
+                <!-- onsubmit="return getScore()" -->
+            <div class="userInput">
+                <p><label>Text: </label>
+                <input type="text" id = "Text" name="Text" placeholder="Enter name of text" required></p>
+                <p><label>Rater Initials: </label>
+                <input type="text" id = "RaterInitials" name="RaterInitials" placeholder="Your identifier" required></p>
+            </div>
+            <div id="overallRating">
+                <p>How well does the text work for you?</p>
+                <p class="spacing">
+                    <label for="overall_Rating">not at all</label>
+                    <input type="range" id="overall_Rating" name="overall_Rating" class="disabled" min="0" max="100" value="50" onclick="showSliderThumb('overall_Rating')">
+                    <label for="overall_Rating">completely and fully</label>
+                    <span id="feedback_overall_Rating" class="invalid"></span>
+                </p>
+            </div>
+            <p>
+                <input type="submit" value="Submit">
+            </p>
+            </form>
+            
+        </section>
+    </main>
+  </body>
+</html>
