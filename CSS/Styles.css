@@ -103,7 +103,7 @@ input[type=range] {
   margin-bottom: 4rem;
   } 
 
-.disabled::-webkit-slider-thumb, .disabled::-moz-range-thumb, .disabled::-ms-thumb {
+.disabled::-webkit-slider-thumb {
   -webkit-appearance: none;
   /* display: none; */
   visibility: hidden;
@@ -117,7 +117,7 @@ input[type=range] {
 
 }
 
-.enabled::-webkit-slider-thumb, .enabled::-moz-range-thumb, .enabled::-ms-thumb {
+.enabled::-webkit-slider-thumb {
   -webkit-appearance: none;
   /* display: none; */
   visibility: visible;
